@@ -8,6 +8,7 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <!-- component -->
+
             <!-- NEW POST -->
             <div class="bg-white max-w-md mx-auto my-8 border border-black rounded">
 

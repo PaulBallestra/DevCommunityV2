@@ -15,7 +15,7 @@
                         <!--  IMAGE  -->
                         {{-- <img src="{{asset($user->photo)}}" class="card-img-top" alt="..." style="height: 50px;width: 50px">--}}
 
-                        <img src=" {{ url("imgs/".Auth::user()->photo) }}" class="card-img-top" alt="...">
+                        <img src=" {{ url("images/".Auth::user()->photo) }}" class="card-img-top" alt="...">
 
                         <div class="absolute inset-0 w-full h-full bg-indigo-900 opacity-75"></div>
                         <div class="absolute inset-0 w-full h-full flex items-center justify-center fill-current text-white">
@@ -37,7 +37,7 @@
                                 <p style="color: lightslategrey">{{ Auth::user()->bio }}</p>
                              </span>
 
-                            <a class="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900" href="/edit/{{ Auth::user()->id }}">
+                            <a class="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900" href="/edit">
                                 <span :href="route('edit')">  {{ __('Modifier Profil') }} </span>
                                 <span class="text-xs ml-1">➜</span>
                             </a>
